@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairi_Ogan</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Кнопка scroll -->
+    <div class="btn-top_block">
+        <img class="btn-top" src="img/icons/arrow-top.svg" alt="Наверх">
+    </div>
+    <div class="menu">
+        <div class="container">
+            <nav class="menu-wrap">
+                <div class="menu-list">
+                    <a href="/"><img src="img/icons/logo.svg" alt="Логотип"></a>
+                    <div class="menu-list-links">
+                        <a href="#" class="menu-list__item_one menu-list__item_one_desig">Версия Веб-Дизайнера</a>
+                        <p class="design-hint-warning">Пока-что в разработке!</p>
+                        <a href="#" download class="menu-list__item_one">Скачать резюме</a>
+                    </div>
+                </div>
+                <ul class="menu-list">
+                    <li class="menu-list__item"><a href="#">О себе</a></li>
+                    <li class="menu-list__item to-parallax"><a href="#">Навыки</a></li>
+                    <li class="menu-list__item to-portfolio"><a href="#">Портфолио</a></li>
+                    <li class="menu-list__item to-services"><a href="#">Услуги</a></li>
+                    <li class="menu-list__item to-feedbacks"><a href="#">Отзывы</a></li>
+                    <li class="menu-list__item menu-list__item_contacts">
+                        <p class="nav-contacts">Контакты</p>
+                        <div class="menu-list__item_contacts__block-wrap">
+                            <div class="menu-list__item_contacts__block">
+                                <a href="mailto:oganesyannairi@gmail.com" class="menu-list__item_contacts__block-maill">oganesyannairi@gmail.com</a>
+                                <div class="menu-list__item_contacts__block-social-wrap">
+                                    <a href="#" target="_blank" class="menu-list__item_contacts__block-social__link">
+                                        <img src="img/icons/vk.svg" alt="ВК" class="menu-list__item_contacts__block-social__img">
+                                    </a>
+                                    <a href="#" target="_blank" class="menu-list__item_contacts__block-social__link">
+                                        <img src="img/icons/instagram.svg" alt="Instagram" class="menu-list__item_contacts__block-social__img">
+                                    </a>
+                                    <a href="#" target="_blank" class="menu-list__item_contacts__block-social__link">
+                                        <img src="img/icons/telegram.svg" alt="Telegram" class="menu-list__item_contacts__block-social__img">
+                                    </a>
+                                    <a href="#" target="_blank" class="menu-list__item_contacts__block-social__link">
+                                        <img src="img/icons/whatsapp.svg" alt="Whatsapp" class="menu-list__item_contacts__block-social__img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button class="light-mode-btn">
+                    <img src="img/icons/sun.svg" alt="Солнце" class="light-mode-btn__icon">
+                    <img src="img/icons/moon.svg" alt="Луна" class="light-mode-btn__icon">
+                </button>
+            </nav>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <div class="offer-wrap">
+                <div class="header-img"><img src="img/header-img.jpg" alt="Разработка сайтов"></div>
+                <div class="offer">
+                    <h1 class="offer-title">Надежный <span class="title-bg">Fullstack</span><br><span class="title-small">разработчик для Вашего проекта</span></h1>
+                    <p class="offer-subtitle">Вы нуждаетесь в крутом сайте?</p>
+                    <p class="offet-subtitle-wsarrow">Я помогу Вам в этом!</p>
+                    <button class="btn to-order-project">Заказать проект</button>
+                </div>
+                <img class="header-arrow" src="img/icons/arrows/header-arrow.svg" alt="стрелочка">
+            </div>
+            <div class="header-hint-block">
+                <p class="header-hint-text to-skills">Узнать больше</p>
+                <div class="header-hint-block__item">
+                    <h4 class="header-hint-block__item-title">Адаптивная верстка сайта</h4>
+                    <p class="header-hint-block__item-desc">Разработаем сайт так, чтобы он выглядел хорошо на всех устройствах.</p>
+                </div>
+                <div class="header-hint-block__item">
+                    <h4 class="header-hint-block__item-title">Кроссбраузерность</h4>
+                    <p class="header-hint-block__item-desc">Отсутствие некорректной работы, ошибок в вёрстке и способность отображать материал с одинаковой степенью читабельности.</p>
+                </div>
+                <div class="header-hint-block__item">
+                    <h4 class="header-hint-block__item-title">Скорость</h4>
+                    <p class="header-hint-block__item-desc">Этот показатель влияет на ранжирование сайта в рейтинге поисковой выдачи.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="parallax" id="parallax">
+        <div class="container">
+            <div class="parallax-content">
+                <p class="parallax-text"><span>Гарантия на верстку</span> - В течении недели после того как я Вам передам архив с готовой версткой, я могу по Вашей просьбе вносить правки в коде <span>без доплат.</span></p>
+                <button class="btn-min btn-min_parallax to-skills">Узнать больше</button>
+            </div>
+        </div>
+        <div class="mask"></div>
+     </div>
+     <section class="skills">
+        <div class="container">
+            <h2 class="section-title">Навыки</h2>
+            <div class="skills-block" id="skills">
+                <div class="progress-block-item">
+                    <svg class="progress-ring" data-target="1">
+                        <circle class="progress-ring__circle progress-ring__circle_one" stroke="#1658B1" stroke-width="13" cx="100" cy="100" r="74" fill="transparent" />
+                    </svg>
+                    <div class="progress-ring-text-block">
+                        <p class="progress-ring__text">HTML</p>
+                        <p class="progress-ring__text progress-ring__text_num padding-right" data-max="90">0</p>
+                    </div>
+                </div>
+                <div class="progress-block-item">
+                    <svg class="progress-ring" data-target="1">
+                        <circle class="progress-ring__circle progress-ring__circle_two" stroke="#1658B1" stroke-width="13" cx="100" cy="100" r="74" fill="transparent" />
+                    </svg>
+                    <div class="progress-ring-text-block">
+                        <p class="progress-ring__text">CSS</p>
+                        <p class="progress-ring__text progress-ring__text_num" data-max="90">0</p>
+                    </div>
+                </div>
+                <div class="progress-block-item">
+                    <svg class="progress-ring" data-target="1">
+                        <circle class="progress-ring__circle progress-ring__circle_three" stroke="#1658B1" stroke-width="13" cx="100" cy="100" r="74" fill="transparent" />
+                    </svg>
+                    <div class="progress-ring-text-block">
+                        <p class="progress-ring__text">JS</p>
+                        <p class="progress-ring__text progress-ring__text_num" data-max="75">0</p>
+                    </div>
+                </div>
+                <div class="progress-block-item">
+                    <svg class="progress-ring" data-target="1">
+                        <circle class="progress-ring__circle progress-ring__circle_four" stroke="#1658B1" stroke-width="13" cx="100" cy="100" r="74" fill="transparent" />
+                    </svg>
+                    <div class="progress-ring-text-block">
+                        <p class="progress-ring__text">PHP</p>
+                        <p class="progress-ring__text progress-ring__text_num" data-max="65">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-skills tabs-skills-block">
+                <div class="tabs-skills-nav-block tabs-skills-nav-block__line">
+                    <div class="tabs-container">
+                        <ul class="tabs-skills-nav-block-menu">
+                            <li data-tab="#tab_1" class="tabs-skills-nav-block-menu__item tab-one-btn active">Верстка</li>
+                            <li data-tab="#tab_2" class="tabs-skills-nav-block-menu__item tab-one-btn">React</li>
+                            <li data-tab="#tab_3" class="tabs-skills-nav-block-menu__item tab-one-btn">WORDPRESS</li>
+                            <li data-tab="#tab_4" class="tabs-skills-nav-block-menu__item tab-one-btn">Оптимизация</li>
+                            <li data-tab="#tab_5" class="tabs-skills-nav-block-menu__item tab-one-btn">Дизайн</li>
+                            <li data-tab="#tab_6" class="tabs-skills-nav-block-menu__item tab-one-btn">SEO</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="tab_1" class="tabs-skills-content tabs-one__item active">
+                    <div class="tabs-skills-left-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title">Верстка</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-left">
+                        <img src="img/icons/tabs-icon-typography.svg" alt="Верстка">
+                    </div>
+                </div>
+
+                <div id="tab_2" class="tabs-skills-content tabs-one__item">
+                    <div class="tabs-skills-left-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title">React</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class=" to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-left">
+                        <img src="img/icons/tabs-icon-react.svg" alt="React">
+                    </div>
+                </div>
+
+                <div id="tab_3" class="tabs-skills-content tabs-one__item">
+                    <div class="tabs-skills-left-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title">WORDPRESS</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-left">
+                        <img src="img/icons/tabs-icon-wp.svg" alt="WORDPRESS">
+                    </div>
+                </div>
+
+                <div id="tab_4" class="tabs-skills-content tabs-one__item">
+                    <div class="tabs-skills-left-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title">Оптимизация</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-left">
+                        <img src="img/icons/tabs-icon-optimiz.svg" alt="Оптимизация">
+                    </div>
+                </div>
+
+                <div id="tab_5" class="tabs-skills-content tabs-one__item">
+                    <div class="tabs-skills-left-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title">Дизайн</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-left">
+                        <img src="img/icons/tabs-icon-web-design.svg" alt="Дизайн">
+                    </div>
+                </div>
+
+                <div id="tab_6" class="tabs-skills-content tabs-one__item">
+                    <div class="tabs-skills-left-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title">SEO</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-left">
+                        <img src="img/icons/tabs-icon-seo.svg" alt="SEO">
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title section-title_teq-arrow">Техника разработки</h2>
+            <div class="tabs-skills tabs-skills__mt">
+                <div class="tabs-skills-nav-block">
+                    <div class="tabs-container">
+                        <ul class="tabs-skills-nav-block-menu">
+                            <li data-tab="#tab_skill_1" class="tabs-skills-nav-block-menu__item tab-two-btn active">Верстка</li>
+                            <li data-tab="#tab_skill_2" class="tabs-skills-nav-block-menu__item tab-two-btn">Скрипты</li>
+                            <li data-tab="#tab_skill_3" class="tabs-skills-nav-block-menu__item tab-two-btn">Серверные</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="tabs__content">
+                    <div class="tabs__item active" id="tab_skill_1">
+                        <div class="tabs__item-content-wrap">
+                            <div class="tabs-content-wrap__block">
+                                <p class="wrap__block_item">Html5</p>
+                                <p class="wrap__block_item">Css3</p>
+                                <p class="wrap__block_item">Less</p>
+                                <p class="wrap__block_item">БЭМ</p>
+                            </div>
+                            <div class="tabs-content-wrap__block">
+                                <p class="wrap__block_item">Bootstrap</p>
+                                <p class="wrap__block_item">FlexBox</p>
+                                <p class="wrap__block_item">css grid</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item" id="tab_skill_2">
+                        <div class="tabs__item-content-wrap">
+                            <div class="tabs-content-wrap__block">
+                                <p class="wrap__block_item">JavaScript</p>
+                                <p class="wrap__block_item">jQuery</p>
+                                <p class="wrap__block_item">React</p>
+                                <p class="wrap__block_item">Typescript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__item" id="tab_skill_3">
+                        <div class="tabs__item-content-wrap">
+                            <div class="tabs-content-wrap__block tabs-content-wrap__block_w">
+                                <p class="wrap__block_item">Php</p>
+                                <p class="wrap__block_item">Базы данных и SQL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section id="feedbacks" class="feedback">
+        <div class="container">
+            <h2 class="section-title">Отзывы</h2>
+            <a href="#" class="add-feedback-link">Добавить отзыв</a>
+            <div class="slider">
+                <div class="slider__item">
+                    <div class="feedback-wrap">
+                        <div class="feedback-wrap__img-wrap">
+                            <img src="img/icons/customer-img.svg" alt="Клиент" class="feedback-wrap__img">
+                        </div>
+                        <div class="feedback-wrap__block">
+                            <h3 class="feedback-wrap__block__title">Давит</h3>
+                            <p class="feedback-wrap__block__text">
+                                Я заказывал у Наири сайт для своего Барбершопа и хочу оставить отзыв. Этот парень прекрасный молодой человек знающий свою работу на 1000%. Разрабатывать сайт с ним одно удовольствие, он учитывает все ваши пожелания и предлагает со своей стороны как это будет выглядеть с профессиональной точки зрения. Я в восторге от конечного результата. Советую всем кто хочет себе лучший сайт, обращайтесь именно к нему. Большое спасибо Наири я очень доволен своим сайтом, теперь буду советовать людям именно вас.
+                            </p>
+                            <a href="https://barbershopvsesvoy.ru" class="feedback-wrap__block__link">Ссылка на проект</a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="feedback-wrap">
+                        <div class="feedback-wrap__img-wrap">
+                            <img src="img/icons/customer-img.svg" alt="Клиент" class="feedback-wrap__img">
+                        </div>
+                        <div class="feedback-wrap__block">
+                            <h3 class="feedback-wrap__block__title">Мариам</h3>
+                            <p class="feedback-wrap__block__text">
+                                Я заказывал у Наири сайт для своего Барбершопа и хочу оставить отзыв. Этот парень прекрасный молодой человек знающий свою работу на 1000%. Разрабатывать сайт с ним одно удовольствие, он учитывает все ваши пожелания и предлагает со своей стороны как это будет выглядеть с профессиональной точки зрения. Я в восторге от конечного результата. Советую всем кто хочет себе лучший сайт, обращайтесь именно к нему. Большое спасибо Наири я очень доволен своим сайтом, теперь буду советовать людям именно вас.
+                            </p>
+                            <a href="https://barbershopvsesvoy.ru" class="feedback-wrap__block__link">Ссылка на проект</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="feedback-wrap">
+                        <div class="feedback-wrap__img-wrap">
+                            <img src="img/icons/customer-img.svg" alt="Клиент" class="feedback-wrap__img">
+                        </div>
+                        <div class="feedback-wrap__block">
+                            <h3 class="feedback-wrap__block__title">Давит</h3>
+                            <p class="feedback-wrap__block__text">
+                                Я заказывал у Наири сайт для своего Барбершопа и хочу оставить отзыв. Этот парень прекрасный молодой человек знающий свою работу на 1000%. Разрабатывать сайт с ним одно удовольствие, он учитывает все ваши пожелания и предлагает со своей стороны как это будет выглядеть с профессиональной точки зрения. Я в восторге от конечного результата. Советую всем кто хочет себе лучший сайт, обращайтесь именно к нему. Большое спасибо Наири я очень доволен своим сайтом, теперь буду советовать людям именно вас.
+                            </p>
+                            <a href="https://barbershopvsesvoy.ru" class="feedback-wrap__block__link">Ссылка на проект</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title section-title_arrow">Портфолио</h2>
+            <div class="portfolio-wrap">
+                <div class="portfolio-wrap__item">
+                    <div class="portfolio-wrap__item__img-wrap">
+                        <img src="img/portfolio-item-one.jpg" alt="Сайт под ключь - Барбершоп ВСЕ СВОИ" class="portfolio-wrap__item__img">
+                    </div>
+                    <div class="portfolio-wrap__item__main">
+                        <h4 class="portfolio-wrap__item__main__title">Сайт под ключь - Барбершоп ВСЕ СВОИ</h4>
+                    </div>
+                </div>
+                <div class="portfolio-wrap__item">
+                    <div class="portfolio-wrap__item__img-wrap">
+                        <img src="img/portfolio-item-two.jpg" alt="Верстка сайта - Discover Amazing places" class="portfolio-wrap__item__img">
+                    </div>
+                    <div class="portfolio-wrap__item__main">
+                        <h4 class="portfolio-wrap__item__main__title">Верстка сайта - Discover Amazing places</h4>
+                    </div>
+                </div>
+                <div class="portfolio-wrap__item">
+                    <div class="portfolio-wrap__item__img-wrap">
+                        <img src="img/portfolio-item-three.jpg" alt="Посадка на CMS - Бесплатный курс по в.." class="portfolio-wrap__item__img">
+                    </div>
+                    <div class="portfolio-wrap__item__main">
+                        <h4 class="portfolio-wrap__item__main__title">Посадка на CMS - Бесплатный курс по в..</h4>
+                    </div>
+                </div>
+                <div class="portfolio-wrap__item">
+                    <div class="portfolio-wrap__item__img-wrap">
+                        <img src="img/portfolio-item-four.jpg" alt="Верстка сайта - ЭКСПОФОРУМ" class="portfolio-wrap__item__img">
+                    </div>
+                    <div class="portfolio-wrap__item__main">
+                        <h4 class="portfolio-wrap__item__main__title">Верстка сайта - ЭКСПОФОРУМ</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Услуги</h2>
+            <p class="services-desc">Снизу предоставлены основные услуги, также вы можете предложить свою идею и мы это обсудим :)</p>
+            <div class="tabs-skills tabs-skills-block tabs-skills-black tabs-skills-big">
+                <div class="tabs-skills-nav-block tabs-skills-nav-block__line-right">
+                    <div class="tabs-container">
+                        <ul class="tabs-skills-nav-block-menu">
+                            <li data-tab="#servic_tab_1" class="tabs-skills-nav-block-menu__item tab-three-btn">Лендинг</li>
+                            <li data-tab="#servic_tab_2" class="tabs-skills-nav-block-menu__item tab-three-btn">Многостраничник</li>
+                            <li data-tab="#servic_tab_3" class="tabs-skills-nav-block-menu__item tab-three-btn active">Посадка на CMS</li>
+                            <li data-tab="#servic_tab_4" class="tabs-skills-nav-block-menu__item tab-three-btn">Оптимизация</li>
+                            <li data-tab="#servic_tab_5" class="tabs-skills-nav-block-menu__item tab-three-btn">Дизайн</li>
+                            <li data-tab="#servic_tab_6" class="tabs-skills-nav-block-menu__item tab-three-btn">SEO</li>
+                            <li data-tab="#servic_tab_7" class="tabs-skills-nav-block-menu__item tab-three-btn">Доработка кода</li>
+                            <li data-tab="#servic_tab_8" class="tabs-skills-nav-block-menu__item tab-three-btn">Скорость загрузки</li>
+                            <li data-tab="#servic_tab_9" class="tabs-skills-nav-block-menu__item tab-three-btn gold">Сайт под ключ</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="servic_tab_1" class="tabs-skills-content tabs-three__item">
+                    <div class="tabs-skills-right-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title right-bar__title">Лендинг</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-right">
+                        <img src="img/icons/tabs-icon-typography.svg" alt="Лендинг">
+                    </div>
+                </div>
+
+                <div id="servic_tab_2" class="tabs-skills-content tabs-three__item">
+                    <div class="tabs-skills-right-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title right-bar__title">Многостраничник</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-right">
+                        <img src="img/icons/tabs-icon-s-multipage.svg" alt="Многостраничник">
+                    </div>
+                </div>
+
+                <div id="servic_tab_3" class="tabs-skills-content active tabs-three__item">
+                    <div class="tabs-skills-right-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title right-bar__title">WORDPRESS</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-right">
+                        <img src="img/icons/tabs-icon-wp.svg" alt="WORDPRESS">
+                    </div>
+                </div>
+
+                <div id="servic_tab_4" class="tabs-skills-content tabs-three__item">
+                    <div class="tabs-skills-right-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title right-bar__title">Оптимизация</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-right">
+                        <img src="img/icons/tabs-icon-optimiz.svg" alt="Оптимизация">
+                    </div>
+                </div>
+
+                <div id="servic_tab_5" class="tabs-skills-content tabs-three__item">
+                    <div class="tabs-skills-right-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title right-bar__title">Дизайн</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-right">
+                        <img src="img/icons/tabs-icon-web-design.svg" alt="Дизайн">
+                    </div>
+                </div>
+
+                <div id="servic_tab_6" class="tabs-skills-content tabs-three__item">
+                    <div class="tabs-skills-right-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title right-bar__title">SEO</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-right">
+                        <img src="img/icons/tabs-icon-seo.svg" alt="SEO">
+                    </div>
+                </div>
+                <div id="servic_tab_7" class="tabs-skills-content tabs-three__item">
+                    <div class="tabs-skills-right-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title right-bar__title">Доработка кода</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-right">
+                        <img src="img/icons/tabs-icon-s-recoding.svg" alt="Доработка кода">
+                    </div>
+                </div>
+                <div id="servic_tab_8" class="tabs-skills-content tabs-three__item">
+                    <div class="tabs-skills-right-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title right-bar__title">Скорость загрузки</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-right">
+                        <img src="img/icons/tabs-icon-s-speed.svg" alt="Скорость загрузки">
+                    </div>
+                </div>
+                <div id="servic_tab_9" class="tabs-skills-content tabs-three__item">
+                    <div class="tabs-skills-right-bar">
+                        <div class="tabs-bar-container">
+                            <h3 class="tabs-skills-left-bar__title right-bar__title">Сайт под ключ</h3>
+                            <p class="tabs-skills-left-bar__text">Являясь всего лишь частью общей картины, явные признаки победы институционализации и по сей день остаются уделом либералов, которые жаждут быть указаны как претенденты на роль ключевых факторов. В частности, укрепление и развитие внутренней структуры, в своём классическом представлении, допускает внедрение дальнейших направлений развития.</p>
+                            <button class="btn to-order-project">Заказать проект</button>
+                        </div>
+                    </div>
+                    <div class="tabs-skills-content-main tabs-skills-content-main-right">
+                        <img src="img/icons/tabs-icon-s-sitekey.svg" alt="Сайт под ключ">
+                    </div>
+                </div>
+
+            </div>
+            <div class="services-desc-block-wrap">
+                <p class="services-desc-block-wrap__text">Цены и дедлайны зависят от сложности работы</p>
+                <div class="services-desc-block-wrap__btn-block">
+                    <button class="services-desc-block-wrap__btn to-order-project">Обсудить проект</button>
+                    <div class="services-desc-block-wrap__btn-hint">
+                        <p>?</p>
+                    </div>
+                    <div class="services-desc-block-wrap__modal-hint">
+                        <p class="services-desc-block-wrap__modal-hint__text">
+                            Нажмите на кнопку, чтобы отправить запрос на консультацию. После Я свяжусь с Вами и мы обсудим Ваш проект. Обсудим цену и дедлайны проекта.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+     </section>
+     <section class="about">
+        <div class="container">
+            <h2 class="section-title">О себе</h2>
+            <div class="about-wrap">
+                <div class="about-img-block">
+                    <img src="img/me-img.jpg" alt="Веб-разработчик" class="about-img-block__img">
+                </div>
+                <div class="about-info-block">
+                    <p class="about-info-block__text"><strong>Приветствую мой дорогой друг!</strong> Меня зовут <strong>Наири</strong> и я тот самый FULLSTACK-разработчик о котором ты слышал. Очень люблю свое дело, и готов разрабатывать пррросто крутейшие сайты для моих клиентов. Работаю в логистической компании GLOBBING, люблю прогуливаться по ночам на улице со своей компанией, в свободное время хожу в зал, очень люблю спорт :)</p>
+                    <p class="about-info-block__text">Если по теме, то я владею многочисленными навыками для разработки сайтов. Хорошо знаю <strong>Frontend</strong> и довольно хорошо владею навыками в <strong>Beckend’e.</strong> Более подробную информация можно узнать лично у меня, соц. сети ниже.</p>
+                    <div class="about-info-block__social">
+                        <a href="mailto:oganesyannairi@gmail.com" class="about-info-block__social__link-maill menu-list__item_contacts__block-maill">oganesyannairi@gmail.com</a>
+                        <div class="about-info-block__social-block">
+                            <a href="#" class="about-info-block__social__link">
+                                <img src="img/icons/vk.svg" alt="ВК" class="about-info-block__social__img">
+                            </a>
+                            <a href="#" class="about-info-block__social__link">
+                                <img src="img/icons/instagram.svg" alt="instagram" class="about-info-block__social__img">
+                            </a>
+                            <a href="#" class="about-info-block__social__link">
+                                <img src="img/icons/telegram.svg" alt="Telegram" class="about-info-block__social__img">
+                            </a>
+                            <a href="#" class="about-info-block__social__link">
+                                <img src="img/icons/whatsapp.svg" alt="Whatsapp" class="about-info-block__social__img">
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section id="order-project" class="order-project">
+        <div class="container">
+            <h2 class="section-title">Заказать проект</h2>
+            <div class="order-project-wrap">
+                <div class="order-project-wrap-info">
+                    <h4 class="order-project-wrap-info__title">Уважаемый клиент, заполните форму для обратной связи</h4>
+                    <p class="order-project-wrap-info__text">Заполните основные данные, после чего Я свяжусь с вами по поводу проекта и начнем обсуждение по вашему проекту. Уточним Техническое Задание с Дедлайнами, а также стоимость услуги.</p>
+                    <p class="order-project-wrap-info__text">Также я открыт с Вами в социальных сетях, контактная информация есть в конце страницы</p>
+                </div>
+                <div class="order-project-form">
+                    <form action="#" class="form" id="form">
+                        <input id="user-name" name="user-name" type="text" placeholder="Ваше имя" class="input" autocomplete="off" required>
+                        <div class="select input">
+                            <select id="order-name" name="order-name" class="select-active">
+                                <option value="1" selected disabled>Название услуги</option>
+                                <option value="landing">Лендинг</option>
+                                <option value="multipage">Многостраничник</option>
+                                <option value="on-wordpress">Посадка на WORDPRESS</option>
+                                <option value="site-key">Сайт под ключ</option>
+                                <option value="speed-up-download">Скорость загрузки</option>
+                                <option value="code-improvement">Доработка кода</option>
+                                <option value="optimiz">Оптимизация</option>
+                                <option value="design">Дизайн</option>
+                                <option value="seo">SEO</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        <input id="user-mail" name="user-mail" type="email" placeholder="Ваша почта" class="input" autocomplete="off" required>
+                        <textarea id="description" name="description" placeholder="Описание проекта" class="input input-desc" required></textarea>
+                        <label class="checkbox-wrap">
+                            <input type="checkbox" checked name="policy-active" class="checkbox" required>
+                            <span class="custom-checkbox"></span>
+                            <p class="checkbox-text">Нажимая на кнопку Вы соглашаетесь на обработку персональных данных, основываясь на <a href="#"><strong>политику конфидициальности</strong></a></p>
+                        </label>
+                        <button type="submit" class="form-btn" title="Нажми меня :3" >Заказать проект</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </section>
+     <footer class="footer footer-black">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-wrapper-question">
+                    <h3 class="footer-wrapper-question_title">Остались какие то вопросы?</h3>
+                    <div class="footer-wrapper-question_text">Вы также можете заполнить форму и указать ряд Ваших вопросов, выбрав в поле “Название услуги” - “Другое”.</div>
+                    <div class="footer-wrapper-question_text">После отправи формы Я свяжусь с вами в течении 24 часов.</div>
+                </div>
+                <div class="footer-wrapper-main">
+                    <h3 class="footer-wrapper-main_title">Выбирайте меня и погнали!</h3>
+                    <p class="footer-wrapper-main_description">Все права защищены,<br><a href="privacy-policy.html">политикой конфиденциальности</a></p>
+                </div>
+                <div class="footer-wrapper-contacts">
+                    <h3 class="footer-wrapper-contacts_title footer-wrapper-question_title">Мои контактные данные:</h3>
+                    <a href="mailto:oganesyannairi@gmail.com" class="footer-wrapper-contacts_mail">oganesyannairi@gmail.com</a>
+                    <div class="footer-wrapper-contacts-block">
+                        <a href="https://vk.com/ya_yche_y_nee_v_golovee" target="_blank" class="contacts-block__link">
+                            <img src="img/icons/vk.svg" alt="ВК" class="contacts-block__link-img">
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/nairi_oganesyan_/?hl=ru" class="contacts-block__link">
+                            <img src="img/icons/instagram.svg" alt="Instagram" class="contacts-block__link-img">
+                        </a>
+                        <a href="https://t.me/noganesyan" target="_blank" class="contacts-block__link">
+                            <img src="img/icons/telegram.svg" alt="Telegram" class="contacts-block__link-img">
+                        </a>
+                        <a href="https://wa.me/37433777681?text=Здравствуйте%2C+у+меня+есть+вопрос" target="_blank" class="contacts-block__link">
+                            <img src="img/icons/whatsapp.svg" alt="Whatsapp" class="contacts-block__link-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
